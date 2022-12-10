@@ -4,7 +4,7 @@ export default function
 () {
   return (
     <div className="footer-div">
-        <div>Footer</div>
+        <p className='text-center'>copyright &copy; Mytodos.com</p>
     </div>
   )
 }
