@@ -59,7 +59,7 @@ function App() {
       path: `${baseUrl}`,
       element: (
         <>
-          <Header title="To-Do-List" searchBar={false} />
+          <Header title="Techmkr" searchBar={true} />
           <Addtodo addTodo={addTodo} />
           <Todos todos={todos} onDelete={onDelete} />
           <Footer />
@@ -70,7 +70,7 @@ function App() {
       path: `${baseUrl}about`,
       element: (
         <>
-          <Header title="To-Do-List" searchBar={false} />
+          <Header title="Techmkr" searchBar={true} />
           <About />
           <Footer />
         </>

@@ -22,9 +22,6 @@ export default function
               <li className="nav-item">
                 <Link className="nav-link active" to="about">About</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link active">Signin</Link>
-              </li>
             </ul>
 
             {props.searchBar ?
