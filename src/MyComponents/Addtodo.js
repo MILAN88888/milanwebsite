@@ -17,25 +17,29 @@ export const Addtodo = ({addTodo}) => {
   }
  
   return (
+    <>
     <div className='addtodo-div mt-5'>
-      <h3>Add Todo</h3>
+    <h3 className='mb-4'>Add Your Plans Here</h3>
       <Form onSubmit={handleSubmit(onSubmit)}>
       <Form.Field>
         <div className="mb-3">
-          <label htmlFor="title" className="form-label">Todo Title</label>
-          <input type="text" className="form-control" id="title" {...register("title", { required: true, maxLength: 20 })}  value={title} onChange={(e)=>{setTitle(e.target.value)}} />
+          <label htmlFor="title" className="form-label">Plan Title</label>
+          <input type="text" className="form-control inputGreyborder-md border-left-0 pl-3" id="title" {...register("title", { required: true, maxLength: 20 })}  value={title} onChange={(e)=>{setTitle(e.target.value)}} />
           {errors.title && <p>Please Enter The Title!!</p>}
         </div>
         </Form.Field>
         <Form.Field>
         <div className="mb-3">
           <label htmlFor="desc" className="form-label">Description</label>
-          <input type="text" className="form-control" id="desc" {...register("desc", { required: true})} value={desc} onChange={(e)=>{setDesc(e.target.value)}} />
+          <input type="text" className="form-control inputGreyborder-md border-left-0 pl-3" id="desc" {...register("desc", { required: true})} value={desc} onChange={(e)=>{setDesc(e.target.value)}} />
           {errors.desc && <p>Please Enter The Description!!</p>}
         </div>
         </Form.Field>
-        <Button type="submit" className="btn btn-primary">Submit</Button>
+        <Button type="submit" className="btn btn-success">Submit</Button>
       </Form>
+      <h2 className='mb-4 mt-5'>Your Plan Lists</h2>
     </div>
+   
+    </>
   )
 }

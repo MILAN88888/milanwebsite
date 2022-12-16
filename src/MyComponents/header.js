@@ -8,31 +8,36 @@ export default function
   header(props) {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-info">
-        <div className="container-fluid">
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <Link className="navbar-brand" to="#">{props.title}</Link>
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+<header className="siteHeaderMain">
+    <div className="siteHeader">
+      <div className="container">
+        <div className="d-flex flex-wrap justify-content-center">
+          <h1 className="site-brand pull-left d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+            <Link className="navbar-brand" to="#">
+              <span className="logoText"><span className='text-success'>T</span>ech<span className='text-success'>m</span>kr</span>
+            </Link>
+          </h1>
+       
+          <input className="side-menu" type="checkbox" id="side-menu" />
+          <label className="hamb" htmlFor="side-menu"><span className="hamb-line"></span></label>
+          
+          <div className="mainMenu pull-right">
+            <ul className="nav nav-pills menu">
+              <li className="nav-item"><Link to="/" className="nav-link" aria-current="page">Home</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="about">About</Link>
-              </li>
+              <li className="nav-item"><Link to="/about" className="nav-link mynav">My Info</Link></li>
+              <li className="nav-item"><Link to="/blogs" className="nav-link"><i
+                    className="fa fa-lock"></i>&nbsp;&nbsp;Blogs</Link></li>
+              <li className="nav-item"><Link to="/planlist" className="nav-link"><i className="fa fa-user-o"></i>&nbsp;&nbsp;
+                Save Your Plan</Link></li>
+             
             </ul>
-
-            {props.searchBar ?
-              <form className="d-flex" role="search">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-success" type="submit">Search</button>
-              </form> : ""
-            }
           </div>
         </div>
-      </nav>
+      </div>
+    </div>
+  </header>
+  <marquee className="text-success" scrollamount="50" direction="right">______________________________________</marquee>
     </div>
   )
 }
