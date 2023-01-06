@@ -1,86 +1,98 @@
 import React from 'react'
-import {
-    Link,
-  } from "react-router-dom";
 
-export const About = (props) => {
-    
+const About = (props) => {
     return (
         <>
-          <section class="main-content mt-5 mb-5">
-	<div class="container">
-		<div id="content" class="" role="main">
-			<div class="row py-5 mt-4 justify-content-between">
-				
-				<div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
-					
-					
-					<img src={props.pic.myImage} alt=""
-						class="img-fluid mb-3 d-none d-md-block myImage" />
-				</div>
-			
-				<div class="col-md-6 col-lg-6 ml-auto formRegister">
-					
-						
-						<div class="mb-4">
-							<h4>Milan Kumar Chaudhary</h4>
-							
-						</div>
-					
-						<div class="mb-4 mt-4">
+     <section className="main-content mt-5 mb-5">
+                <div className="container">
+                    <div id="content" className="container" role="main">
+                        <div className="row py-5 mt-4 justify-content-between container">
+                            <div className="col-md-6 pr-lg-6 mb-5 mb-md-0">
+                                <img  src={props.pic.myImage} alt="..."
+                                    className="img-fluid mb-3 d-md-block myImage" />
+                                    <p><i>Hi, I am Milan Kumar Chaudhary. Currently, I am living in Kathmandu, Nepal. I completed Computer Sceince and Engineering from VTU University in December 2020. I love new challenging, ideas and project tasks. Beside of these I like playing game.If you contact dont hegitate to contact for anything project help, ideas, games, news etc.
+                                    </i></p>    
+                            </div>
+                            <div className="pl-6 col-md-6 col-lg-6 ml-auto formRegister container">
+                                <div className="mb-4 container">
+                                    <h4>Milan Kumar Chaudhary</h4>
+                                </div>
+                                <div className="mb-4 mt-4 container">
+                                    <p className='inputGreyborder-md border-left-0 pl-3 text-warning'>I'm software developer.</p>
+                                </div>
+                                <div className="mb-4 mt-4 container">
+                                    <h4>Skills</h4>
+                                </div>
+                                <div className="mb-4 mt-4 container">
+                                    <p><a href='https://www.w3schools.com/html/' ><img alt='..' src={props.pic.htm} style={{ height: "40px" }} /></a>&nbsp;
+                                        <a href='https://www.w3schools.com/css/' ><img alt='..' src={props.pic.cs} style={{ height: "40px" }} /></a>&nbsp;
+                                        <a href='https://www.w3schools.com/js/js_es6.asp' ><img alt='..' src={props.pic.jas} style={{ height: "40px" }} /></a>&nbsp;
+                                        <a href='https://dev.java/learn/' ><img alt='..' src={props.pic.java} style={{ height: "40px" }} /></a>&nbsp;
+                                        <a href='https://docs.python.org/3/tutorial/index.html' ><img alt='..' src={props.pic.python} style={{ height: "40px" }} /></a>&nbsp;
+                                        <a href='https://www.php.net/' ><img alt='..' src={props.pic.ph} style={{ height: "40px" }} /></a>&nbsp;
+                                        <a href='https://v5.reactrouter.com/web/guides/philosophy' ><img alt='..' src={props.pic.react} style={{ height: "40px" }} /></a>&nbsp;
+                                        <a href='https://laravel.com/docs/9.x' ><img alt='..' src={props.pic.laravel} style={{ height: "40px" }} /></a></p>
+                                </div>
+                                <div className="mb-4 mt-4 container">
+                                    <h4>Tools</h4>
+                                </div>
+                                <div className="mb-4 mt-4 container">
+                                    <p>
+                                        <a href='https://code.visualstudio.com/' ><img alt='..' src={props.pic.vscode} style={{ height: "40px" }} /></a>&nbsp;
+                                        <a href='https://www.sublimetext.com/' ><img alt='..' src={props.pic.sublime} style={{ height: "40px" }} /></a>&nbsp;
+                                        <a href='https://git-scm.com/downloads' ><img alt='..' src={props.pic.git_bash} style={{ height: "40px" }} /></a>&nbsp;
+                                        <a href='https://filezilla-project.org/' ><img alt='..' src={props.pic.filezilla} style={{ height: "40px" }} /></a>&nbsp;
+                                        <a href='https://www.jetbrains.com/pycharm/' ><img alt='..' src={props.pic.pycharm} style={{ height: "40px" }} /></a>&nbsp;
+                                        <a href='https://www.postman.com/' ><img alt='..' src={props.pic.postman} style={{ height: "40px" }} /></a>&nbsp;
+                                    </p>
+                                </div>
+                                {/* <div className="mb-4 mt-4 container">
+                                    <h4>Projects</h4>
+                                </div>
+                                <div className="mb-4 mt-4 container">
+                                    <ul className="text-info">
+                                        <li>Library management in PHP</li>
+                                        <li><a href='https://github.com/MILAN88888/Oxole'>BookXchange in PHP</a></li>
+                                        <li><a href='https://github.com/MILAN88888/Laravel-BookXchange'>BookXchange using Laravel</a></li>
+                                        <li><a href='https://github.com/MILAN88888/milanwebsite'>milankumarchaudhary.com.np</a> using React Js</li>
+                                        <li><a href='https://github.com/MILAN88888/milanwebsite'>Wordpress User Registration plugin</a></li>
+                                    </ul>
+                                </div> */}
+                                <div className="mb-4 mt-4 container">
+                                    <h4>Connect with Me</h4>
+                                </div>
+                                <div className="mb-4 mt-4 container">
+                                    <a href='https://github.com/MILAN88888'><img alt='..' src={props.pic.git} /></a>
+                                    <a href="https://www.linkedin.com/in/milan-chaudhary-80491b257/"><img alt='..' src={props.pic.linkin} /></a>
+                                    <a href='https://www.facebook.com/ma.tmro.milan/'><img alt='..' src={props.pic.facebook} /></a>
+                                </div>
+                                <div className="mb-4 mt-4 container">
+                                    <h4>My Resume</h4>
+                                </div>
+                                <div className='mb-4 mt-4 container'>
+                                    <a href={props.pic.milan_cv} download="milan_cv" className='btn '><img src={props.pic.cv} alt=".." /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                     
-                            <p className='inputGreyborder-md border-left-0 pl-3 text-warning'>I'm software developer.</p>
-							
-						</div>
-                        <div class="mb-4 mt-4">
-
-                     
-                            <h4>Skills</h4>
-							
-						</div>
-                        <div class="mb-4 mt-4">
-                        <p><img src={props.pic.htm} style={{height:"40px"}}/>&nbsp;
-                        <img src={props.pic.cs}style={{height:"40px"}} />&nbsp;
-                        <img src={props.pic.ph} style={{height:"40px"}} />&nbsp;
-                        <img src={props.pic.jav} style={{height:"40px"}} />&nbsp;
-                        <img src={props.pic.react} style={{height:"40px"}} />&nbsp;
-                        <img src={props.pic.laravel} style={{height:"40px"}} /></p>
-                        </div>
-                        <div class="mb-4 mt-4">
-                        <h4>Projects</h4>
-                        </div>
-                        <div class="mb-4 mt-4">
-                        <ul className="text-info">
-                            <li>Library management in PHP</li>
-                            <li>BookXchange in PHP</li>
-                            <li>BookXchange using Laravel</li>
-                            <li>milankumarchaudhary.com.np using React Js</li>
-                        </ul>
-                        </div>
-                        <div class="mb-4 mt-4">
-                        <h4>Links</h4>
-                        </div>
-                        <div class="mb-4 mt-4">
-                        <Link to=""><img src={props.pic.git}/></Link>
-                        <Link to=""><img src={props.pic.linkin}/></Link>
-                        <Link to=""><img src={props.pic.facebook}/></Link>
-                        </div>
-                        <div class="mb-4 mt-4">
-                        <h4>Download CV</h4>
-                        </div>
-						
-						
-				
-				</div>
-			</div>
-		</div>
-	</div>
-	
-</section>
-</>
-
-
-        
+            </section>
+            <section>
+            <div className='container contact-form' >
+                <h3 className='mb-3 text-warning'>Contact Me</h3>
+                <form className='col-lg-6 col-xl-6 col-sm-12'>
+                    <label htmlFor='name' className='form-label'>Enter Your Name</label>
+                    <input type="text" className='form-control' id='name' name='name' />
+                    <label className='form-label' htmlFor='email'>Enter Your Email</label>
+                    <input type="email" className='form-control' id='email' name='email' />
+                    <label className='form-label' htmlFor='message' >Enter Your Message</label>
+                    <textarea className='form-control' id='message' name='message'></textarea>
+                </form>
+                <button className='btn btn-primary mt-3 btn-lg  '>Send</button>
+            </div>
+            </section>
+            </>
     )
 }
+export default About;

@@ -29,17 +29,39 @@
     display: flex;
     flex-direction: row;
 }
-body {
-    background-color: #2f2b35;
-    color: white;
-}
-
 .home-div {
     margin-top: 100px;
     width: 100%;
     text-align: center;
+    min-height: 60vh; 
 }
 
 .plan-div {
     display: inline-block;
+}
+.blog-div {
+    min-height: 80vh;
+}
+.horizontal-bar {
+  background-color:white;
+  height: 1px;
+  width: 100%;
+}
+.blogs {
+    margin-bottom: 5rem;
+}
+.myImage {
+    border-radius: 500px;
+    width: 400px;
+   
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+@media (min-width:412px) {
+    .home-div {
+        min-height: 50vh; 
+    }
 }

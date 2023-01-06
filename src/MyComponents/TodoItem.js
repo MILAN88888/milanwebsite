@@ -13,6 +13,5 @@ export const TodoItem = ({todo, onDelete}) => {
           </div>
           </div>
     </>
-
   )
 }
