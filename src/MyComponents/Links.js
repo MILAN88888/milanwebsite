@@ -55,7 +55,7 @@ const Links = () => {
         <li>Install Xampp</li>
         <li>Set Environment variable path for PHP</li>
         <li>Choose folder, Open cmd and type: composer create-project laravel/laravel [project_name]</li>
-        <li>It will take time. After created succefully you will get list of folder controller, database, migration, seeders componetns</li>
+        <li>It will take time. After created succefully you will get list of folder controller, database, migration, seeders components</li>
         <li>To start server type: php artisan serve</li>
         <li>To create controller type: php artisan make:controller [controller_name]</li>
       </ol>

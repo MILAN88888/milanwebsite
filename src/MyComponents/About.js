@@ -10,7 +10,7 @@ const About = (props) => {
                             <div className="col-md-6 pr-lg-6 mb-5 mb-md-0">
                                 <img  src={props.pic.myImage} alt="..."
                                     className="img-fluid mb-3 d-md-block myImage" />
-                                    <p><i>Hi, I am Milan Kumar Chaudhary. Currently, I am living in Kathmandu, Nepal. I completed Computer Sceince and Engineering from VTU University in December 2020. I love new challenging, ideas and project tasks. Beside of these I like playing game.If you contact dont hegitate to contact for anything project help, ideas, games, news etc.
+                                    <p><i>Hi, I am Milan Kumar Chaudhary. Currently, I am living in Kathmandu, Nepal. I have studied Computer Sceince and Engineering from VTU University in December 2020. I love new challenges, ideas and project tasks. Beside of these I like playing game.If you want contact, Don't hegitate to contact for anything project help, ideas, games, news etc.
                                     </i></p>    
                             </div>
                             <div className="pl-6 col-md-6 col-lg-6 ml-auto formRegister container">
@@ -24,7 +24,7 @@ const About = (props) => {
                                     <h4>Skills</h4>
                                 </div>
                                 <div className="mb-4 mt-4 container">
-                                    <p><a href='https://www.w3schools.com/html/' ><img alt='..' src={props.pic.htm} style={{ height: "40px" }} /></a>&nbsp;
+                                    <p><a href='https://www.w3schools.com/html/' ><img alt='..' src={props.pic.htm} style={{ height: "3 0px" }} /></a>&nbsp;
                                         <a href='https://www.w3schools.com/css/' ><img alt='..' src={props.pic.cs} style={{ height: "40px" }} /></a>&nbsp;
                                         <a href='https://www.w3schools.com/js/js_es6.asp' ><img alt='..' src={props.pic.jas} style={{ height: "40px" }} /></a>&nbsp;
                                         <a href='https://dev.java/learn/' ><img alt='..' src={props.pic.java} style={{ height: "40px" }} /></a>&nbsp;

@@ -13,15 +13,15 @@ const Projects = () => {
             <p className="card-text text-black"><i>This project i have done when i was in 6th semester of my Engineering as DBMS mini project. We are two me and my friend Nikhil Basur. Both together we had finished this Project. Durtion of project is 6 month. In the project we used html, css, PHP and MySql and Software are Xamp, Sublime text editor.</i></p>
             {/* <a href="https://codepen.io/trending" className="text-success"><u>Click to see</u></a> */}
           </div>
-          <div className='card-footer'><a href="#" className="text-success"><u>No github link</u></a></div>
+          <div className='card-footer'><a href=".." className="text-success"><u>No github link</u></a></div>
         </div> 
         <div className="card mt-3 mx-3" style={{ width: "18rem", backgroundColor: "" }}>
           <div className="card-body">
-            <h5 className="card-title text-info">Todos and Js Calculator</h5>
+            <h5 className="card-title text-info">Quotes, Alarm and Js Calculator</h5>
             <p className="card-text text-black"><i>When i was started learning javascript. I created the Add todos list and Js Calculator as learning Project</i></p>
             
           </div>
-          <div className='card-footer'><a href="https://github.com/MILAN88888/Js_calculator" className="text-success"><u>github</u></a></div>
+          <div className='card-footer'><a href="https://github.com/MILAN88888/Js_calculator" className="text-success"><u>github</u></a> <a href="https://milan88888.github.io/Js_calculator/index.html" className="text-success mx-5"><u>visit</u></a></div>
         </div>
         <div className="card mt-3 mx-3" style={{ width: "18rem", backgroundColor: " " }}>
           <div className="card-body">
